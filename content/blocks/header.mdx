@@ -1,8 +1,8 @@
-import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core"
+import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core";
 
 export const HeaderBlock = ({ ...props }) => {
-  const [showMenu, setShowMenu] = React.useState(false)
-  const navName = "header"
+  const [showMenu, setShowMenu] = React.useState(false);
+  const navName = "header";
   return (
     <Header
       position={["sticky", "relative"]}
@@ -78,31 +78,14 @@ export const HeaderBlock = ({ ...props }) => {
         </Div>
       </Flexbox>
     </Header>
-  )
-}
+  );
+};
 
 export const Branding = () => {
-  const { title } = useSiteMetadata()
+  const { title } = useSiteMetadata();
   return (
     <A href="/" fontSize="3xl" fontWeight="semibold" color="text">
       {title}
     </A>
-  )
-}
-
-export const ModeToggle = ({ ...props }) => {
-  const [colorMode, setColorMode] = useColorMode()
-  return (
-    <Button
-      variant="icon"
-      onClick={() => setColorMode(colorMode === "default" ? "dark" : "default")}
-      ml={[2, 4]}
-      hoverColor="primary"
-      focusColor="text"
-      {...props}
-    >
-      <Icon name={colorMode === "default" ? "sun" : "moon"} size="5" />
-      <VisuallyHidden>Toggle mode</VisuallyHidden>
-    </Button>
-  )
-}
+  );
+};

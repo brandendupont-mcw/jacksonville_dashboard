@@ -1,29 +1,50 @@
 export const Cards = ({ ...props }) => (
   <Section py="8|12" {...props}>
     <Container>
+      <H2 m="0" lineHeight="tight" textAlign="center">
+        Indicators and Data Reports
+      </H2>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
         <Card
           url="https://reflexjs.org/learn"
-          icon="book"
-          heading="Tutorials"
-          description="Read the quick-start tutorials."
+          icon="bar-chart-2"
+          heading="Case Filing"
+          description="When a criminal case is referred and charges filed."
         />
         <Card
           url="https://reflexjs.org/docs"
-          icon="book-open"
-          heading="Documentation"
-          description="Read the Reflex docs."
+          icon="bar-chart-2"
+          heading="Disposition"
+          description="How a criminal case is resoved."
+        />
+        <Card
+          url="https://reflexjs.org/library/blocks"
+          icon="bar-chart-2"
+          heading="Sentencing"
+          description="Confinement in a jail, prison or other facility."
+        />
+        <Card
+          url="https://reflexjs.org/learn"
+          icon="grid"
+          heading="Racial & Ethnic Differences"
+          description="Indicators on racial and ethnic differences in the criminal justice system."
+        />
+        <Card
+          url="https://reflexjs.org/docs"
+          icon="grid"
+          heading="Timeliness of Case Processing"
+          description="Indicators on swift and effective case processing."
         />
         <Card
           url="https://reflexjs.org/library/blocks"
           icon="grid"
-          heading="Blocks"
-          description="Browse the blocks library."
+          heading="Addressing Serious Crime"
+          description="Indicators on how our office deals with serious crime."
         />
       </Grid>
     </Container>
   </Section>
-)
+);
 
 export const Card = ({ icon, heading, description, url, ...props }) => (
   <Flexbox
@@ -64,4 +85,4 @@ export const Card = ({ icon, heading, description, url, ...props }) => (
       {description}
     </P>
   </Flexbox>
-)
+);

@@ -3,6 +3,72 @@ title: Home
 excerpt: This is your home page.
 ---
 
-<Block src="hero" bg="muted" />
+<Section pt="8|12|16|24">
+  <Container>
+    <Flexbox
+      flexDirection="column"
+      alignItems="center|flex-start"
+      textAlign="center|left"
+    >
+      <H1 m="0" fontWeight="bold" lineHeight="tight" >
+        State Attorney
+      </H1>
+      <H1 m="0" fontWeight="bold" lineHeight="tight">
+        Fourth Judicial Circuit
+      </H1>
+            <H1 m="0" fontWeight="bold" lineHeight="tight" color="#4361ee">
+        Data Dashboard
+      </H1>
+      <P fontSize="xl|2xl" mt="2" >
+        Our office is committed to transparency and accountability. Therefore, we annually release data on key decision-points and our performance.
+      </P>
+      
+            <Grid col="2" gap="4">
+        <Button as="a" href="/#indicator_section" variant="primary" hoverBg="#4361ee">
+          View Indicators
+        </Button>
+        <Button as="a" href="/about" variant="secondary" hoverBg="secondaryHover">
+          Learn more <Icon name="arrow-right" ml="4" />
+        </Button>
+      </Grid>
+    </Flexbox>
+    <br></br>
 
+
+  </Container>
+</Section>
+
+
+<Section py="8|12|16|24">
+  <Container>
+    <Grid col="1|2" gap="8|12|16" alignItems="center">
+      <Image
+        src="http://cdn2.creativecirclemedia.com/folioweekly/original/1482877181_14e6.jpg"
+        colStart="null|2"
+        w="full"
+        rounded="lg"
+        overflow="hidden"
+      />
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" lineHeight="tight">
+          SA Melissa Nelson
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          "Welcome to the Transparency Dashboard for the State Attorney’s Office
+          for the 4th Judicial Circuit of Florida. This website offers dozens of
+          data points to assess the work and impact of our office."
+        </P>
+      </Flexbox>
+    </Grid>
+  </Container>
+</Section>
+
+<Block src="fcards" />
+<a name="indicator_section"></a>
 <Block src="cards" />
+
+<Block src="examples/footer-01" />
