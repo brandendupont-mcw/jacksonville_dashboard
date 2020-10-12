@@ -5,7 +5,7 @@ module.exports = {
     title: "SAO 4th",
     description:
       "Our office is committed to transparency and accountability. Therefore, we annually release data on key decision-points and our performance.",
-    siteUrl: process.env.SITE_URL || "http://localhost:8000",
+    siteUrl: process.env.SITE_URL || "https://localhost:8000",
   },
   plugins: [
     "@reflexjs/gatsby-theme-base",
