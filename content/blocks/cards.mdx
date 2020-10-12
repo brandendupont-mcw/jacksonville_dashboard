@@ -2,44 +2,62 @@ export const Cards = ({ ...props }) => (
   <Section py="8|12" {...props}>
     <Container>
       <H2 m="0" lineHeight="tight" textAlign="center">
-        Indicators and Data Reports
+        Prosecutorial Performance Indicators
       </H2>
-      <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
+      <Grid col="1|2|3" mt="6|8|10" gap="2|4|6">
         <Card
-          url="https://reflexjs.org/learn"
-          icon="bar-chart-2"
-          heading="Case Filing"
-          description="When a criminal case is referred and charges filed."
-        />
-        <Card
-          url="https://reflexjs.org/docs"
-          icon="bar-chart-2"
-          heading="Disposition"
-          description="How a criminal case is resoved."
-        />
-        <Card
-          url="https://reflexjs.org/library/blocks"
-          icon="bar-chart-2"
-          heading="Sentencing"
-          description="Confinement in a jail, prison or other facility."
-        />
-        <Card
-          url="https://reflexjs.org/learn"
+          url="/organizational-and-staff-capacity"
           icon="grid"
-          heading="Racial & Ethnic Differences"
-          description="Indicators on racial and ethnic differences in the criminal justice system."
+          heading="Organizational and Staff Capacity"
+          description=""
         />
         <Card
-          url="https://reflexjs.org/docs"
+          url="/addressing-serious-crime"
+          icon="users"
+          heading="Addressing Serious Crime"
+          description=""
+        />
+        <Card
+          url="/racial-ethnic-differences"
+          icon="hexagon"
+          heading="Racial & Ethnic Differences"
+          description=""
+        />
+        <Card
+          url="/time-resource-prioritization"
+          icon="grid"
+          heading="Time & Resource Prioritization"
+          description="Indicators on the use of scare government resources."
+        />
+        <Card
+          url="/protecting-serving-victims"
+          icon="users"
+          heading="Protecting & Serving Victims"
+          description="Indicators on our offices committment to responding to and protecting victims."
+        />
+        <Card
+          url="/minimizing-unnecessary-punitiveness"
+          icon="hexagon"
+          heading="Minimizing Unnecessary Punitiveness"
+          description="Indicators the use of alternative to incarceration and minimizing unnecessary punitiveness."
+        />
+        <Card
+          url="/timeliness-of-case-processing"
           icon="grid"
           heading="Timeliness of Case Processing"
-          description="Indicators on swift and effective case processing."
+          description=""
         />
         <Card
-          url="https://reflexjs.org/library/blocks"
-          icon="grid"
-          heading="Addressing Serious Crime"
-          description="Indicators on how our office deals with serious crime."
+          url="/community-outreach-engagement"
+          icon="users"
+          heading="Community Outreach & Engagement"
+          description=""
+        />
+        <Card
+          url="/prosecutorial-ethics-integrity"
+          icon="hexagon"
+          heading="Prosecutorial Ethics & Integrity"
+          description=""
         />
       </Grid>
     </Container>
@@ -76,7 +94,7 @@ export const Card = ({ icon, heading, description, url, ...props }) => (
       alignItems="center"
       justifyContent="center"
     >
-      <Icon name={icon} size="6" />
+      <Icon name={icon} size="4" />
     </Flexbox>
     <H3 fontSize="2xl" mt="4|6" mb="0">
       {heading}
