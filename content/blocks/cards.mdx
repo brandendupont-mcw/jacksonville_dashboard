@@ -10,61 +10,70 @@ export const Cards = ({ ...props }) => (
           icon="grid"
           heading="Organizational and Staff Capacity"
           description=""
+          iconbg="#1b9e77"
         />
         <Card
           url="/addressing-serious-crime"
           icon="users"
           heading="Addressing Serious Crime"
           description=""
+          iconbg="#ca562c"
         />
         <Card
           url="/racial-ethnic-differences"
           icon="hexagon"
           heading="Racial & Ethnic Differences"
           description=""
+          iconbg="#4575b5"
         />
         <Card
           url="/time-resource-prioritization"
           icon="grid"
           heading="Time & Resource Prioritization"
           description="Indicators on the use of scare government resources."
+          iconbg="#1b9e77"
         />
         <Card
           url="/protecting-serving-victims"
           icon="users"
           heading="Protecting & Serving Victims"
           description="Indicators on our offices committment to responding to and protecting victims."
+          iconbg="#ca562c"
         />
         <Card
           url="/minimizing-unnecessary-punitiveness"
           icon="hexagon"
           heading="Minimizing Unnecessary Punitiveness"
           description="Indicators on how our office avoids excessive punishment."
+          iconbg="#4575b5"
         />
         <Card
           url="/timeliness-of-case-processing"
           icon="grid"
           heading="Timeliness of Case Processing"
           description=""
+          iconbg="#1b9e77"
         />
         <Card
           url="/community-outreach-engagement"
           icon="users"
           heading="Community Outreach & Engagement"
           description=""
+          iconbg="#ca562c"
         />
         <Card
           url="/prosecutorial-ethics-integrity"
           icon="hexagon"
           heading="Prosecutorial Ethics & Integrity"
           description=""
+          iconbg="#4575b5"
         />
       </Grid>
     </Container>
   </Section>
 );
 
-export const Card = ({ icon, heading, description, url, ...props }) => (
+export const Card = ({ icon, heading, description, url, iconbg, ...props }) => (
   <Flexbox
     flexDirection="column"
     textAlign="center"
@@ -87,7 +96,7 @@ export const Card = ({ icon, heading, description, url, ...props }) => (
       <VisuallyHidden>{heading}</VisuallyHidden>
     </Link>
     <Flexbox
-      bg="primary"
+      bg={iconbg}
       color="white"
       rounded="full"
       size="16"
