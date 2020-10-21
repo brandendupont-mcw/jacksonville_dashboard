@@ -3,10 +3,33 @@ title: Home
 excerpt: This is your home page.
 ---
 
+import DataWrapChart from "../components/DataWrap";
+import ButtonToggle from "../components/ButtonToggle";
+
 <Container>
 
 
+<Section maxWidth="700px">
+
+
 # Timeliness of Case Processing
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/DnuHi/7/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/D2yd3/2/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/bUPNo/6/" />
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/hXKbk/2/",
+    right: "https://datawrapper.dwcdn.net/3pDwu/2/",
+  }}
+/>
+
+<DataWrapChart src="" />
+<DataWrapChart src="" />
+</Section>
+
 
 </Container>
 
