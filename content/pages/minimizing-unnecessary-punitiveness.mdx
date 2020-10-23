@@ -3,10 +3,57 @@ title: Home
 excerpt: This is your home page.
 ---
 
+import DataWrapChart from "../components/DataWrap";
+import ButtonToggle from "../components/ButtonToggle";
+
 <Container>
 
 
+<Section maxWidth="700px">
+
+
 # Minimizing Unnecessary Punitiveness
+
+<DataWrapChart
+  title="Avoiding Unnecessary Felony Charges at Filing"
+  src="https://datawrapper.dwcdn.net/CpeZ0/4/"
+/>
+<DataWrapChart src="https://datawrapper.dwcdn.net/zb1fw/1/" />
+
+<DataWrapChart
+  title="Diversion as an Alternative to Incarceration"
+  src="https://datawrapper.dwcdn.net/owwnA/4/"
+/>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/2Y65R/1/",
+    right: "https://datawrapper.dwcdn.net/rYXoJ/1/",
+  }}
+/>
+
+<DataWrapChart
+  title="Reducing Reliance on Pretrial Detention"
+  src="https://datawrapper.dwcdn.net/CpeZ0/4/"
+/>
+<DataWrapChart src="https://datawrapper.dwcdn.net/gqj20/2/" />
+
+<DataWrapChart
+  title="Disproportionate Punishment for the Poor"
+  src="https://datawrapper.dwcdn.net/7nLTa/7/"
+/>
+
+<ButtonToggle
+  buttonText={["Defense", "Zip"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/UeNvQ/1/",
+    right: "https://datawrapper.dwcdn.net/NamO0/2/",
+  }}
+/>
+
+</Section>
+
 
 </Container>
 

@@ -3,10 +3,50 @@ title: Basic page
 excerpt: This is basic text-only page.
 ---
 
+import DataWrapChart from "../components/DataWrap";
+import ButtonToggle from "../components/ButtonToggle";
+
 <Container>
 
 
+<Section maxWidth="700px">
+
+
 # Timeliness & Resource Prioritization
+
+<DataWrapChart
+  title="Ability to Identify Dismissible Cases at Filing"
+  src="https://datawrapper.dwcdn.net/YZkUN/6/"
+/>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/95zGa/6/",
+    right: "https://datawrapper.dwcdn.net/JRGez/2/",
+  }}
+/>
+
+<DataWrapChart
+  title="Prioritizing Cases with the Greatest Public Safety Returns"
+  src="https://datawrapper.dwcdn.net/a0WzS/5/"
+/>
+<DataWrapChart src="https://datawrapper.dwcdn.net/UxjDC/4/" />
+
+<DataWrapChart
+  title="Reserving Incarceration for Serious Offenders"
+  src="https://datawrapper.dwcdn.net/LOaAy/4/"
+/>
+<DataWrapChart src="https://datawrapper.dwcdn.net/VCEFG/2/" />
+
+<DataWrapChart
+  title="Accurate Diversion Decisions and Placements"
+  src="https://datawrapper.dwcdn.net/1wfx0/5/"
+/>
+<DataWrapChart src="https://datawrapper.dwcdn.net/NlTMZ/5/" />
+
+</Section>
+
 
 </Container>
 
