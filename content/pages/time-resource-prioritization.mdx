@@ -6,20 +6,73 @@ excerpt: This is basic text-only page.
 import DataWrapChart from "../components/DataWrap";
 import ButtonToggle from "../components/ButtonToggle";
 
+<Section py="2|4|8|10">
+  <Container>
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+          Timeliness & Resource Prioritization
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          <strong>Objective 2: </strong> To maximize government resources by
+          making timely and strategic decisions about which cases to dismiss or
+          divert versus prosecute and seek incarceration. identity.
+        </P>
+      </Flexbox>
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#ability-identify-dismissable">
+              {" "}
+              Ability to Identify Dismissible Cases at Filing
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#case-public-safety">
+              {" "}
+              Prioritizing Cases with the Greatest Public Safety Returns
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#reserve-incarceration-so">
+              {" "}
+              Reserving Incarceration for Serious Offenders
+            </a>{" "}
+          </li>
+          <li>
+            <a href="#accurate-diversion">
+              {" "}
+              Accurate Diversion Decisions and Placements
+            </a>{" "}
+          </li>
+        </ul>
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
 <Container>
 
 
-<Section maxWidth="700px">
+<Section maxWidth="750px">
 
 
-# Timeliness & Resource Prioritization
-
-**Objective 2:** To maximize government resources by making timely and strategic decisions about which cases to dismiss or divert versus prosecute and seek incarceration.
+### 2.1
 
 <DataWrapChart
   title="Ability to Identify Dismissible Cases at Filing"
   src="https://datawrapper.dwcdn.net/YZkUN/6/"
 />
+
+<a name="ability-identify-dismissable"> </a>
 
 <ButtonToggle
   buttonText={["Felony", "Misd"]}
@@ -29,22 +82,37 @@ import ButtonToggle from "../components/ButtonToggle";
   }}
 />
 
+### 2.3
+
 <DataWrapChart
   title="Prioritizing Cases with the Greatest Public Safety Returns"
   src="https://datawrapper.dwcdn.net/a0WzS/5/"
 />
+
+<a name="case-public-safety"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/UxjDC/4/" />
+
+### 2.4
 
 <DataWrapChart
   title="Reserving Incarceration for Serious Offenders"
   src="https://datawrapper.dwcdn.net/LOaAy/4/"
 />
+
+<a name="reserve-incarceration-so"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/VCEFG/2/" />
+
+### 2.5
 
 <DataWrapChart
   title="Accurate Diversion Decisions and Placements"
   src="https://datawrapper.dwcdn.net/1wfx0/5/"
 />
+
+<a name="accurate-diversion"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/NlTMZ/5/" />
 
 </Section>

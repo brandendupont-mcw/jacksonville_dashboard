@@ -5,36 +5,134 @@ excerpt: This is your home page.
 
 import DataWrapChart from "../components/DataWrap";
 
+<Section py="2|4|8|10">
+  <Container>
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+          Organizational and Staff Capacity
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          <strong>Objective 1: </strong> To ensure the optimization of caseload
+          distributions, staff diversity and retention, and data and clerical
+          support.
+        </P>
+      </Flexbox>
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#office-caseloads">
+              {" "}
+              Office Felony and Misdemeanor Caseloads
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#felony-caseload"> Felony Caseload Distribution</a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#prosecutor-diversity">
+              {" "}
+              Leadership and Line Prosecutor Diversity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#staff-retention"> Staff Retention Rate</a>{" "}
+          </li>
+          <li>
+            <a href="#clerical-capacity"> Clerical and Paralegal Capacity</a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#data-analytic-capacity">Data and Analytic Capacity</a>
+          </li>
+        </ul>
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
 <Container>
 
 
-<Section maxWidth="700px">
+<Section maxWidth="750px">
 
 
-# Organizational and Staff Capacity
+### 1.1
 
-**Objective 1:** To ensure the optimization of caseload distributions, staff diversity and retention, and data and clerical support.
+<DataWrapChart
+  title="Office Felony and Misdemeanor Caseloads"
+  src="https://datawrapper.dwcdn.net/UqIng/6/"
+/>
 
-<DataWrapChart title="table" src="https://datawrapper.dwcdn.net/UqIng/6/" />
+<a name="office-caseloads"> </a>
 
 ** This chart will change**
 
 <DataWrapChart src="https://datawrapper.dwcdn.net/wEYvM/13/" />
 
-<DataWrapChart title="table" src="https://datawrapper.dwcdn.net/hx0L6/5/" />
+### 1.2
+
+<DataWrapChart
+  title="Felony Caseload Distribution"
+  src="https://datawrapper.dwcdn.net/hx0L6/5/"
+/>
+
+<a name="felony-caseload"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/bWxgq/1/" />
 
-<DataWrapChart title="table" src="https://datawrapper.dwcdn.net/4NTZL/9/" />
+### 1.3
+
+<DataWrapChart
+  title="Leadership and Line Prosecutor Diversity"
+  src="https://datawrapper.dwcdn.net/4NTZL/9/"
+/>
+
+<a name="prosecutor-diversity"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/FYo0s/2/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/rwJ8r/2/" />
 
-<DataWrapChart title="table" src="https://datawrapper.dwcdn.net/7ZSqf/5/" />
+### 1.4
+
+<DataWrapChart
+  title="Staff Retention Rate"
+  src="https://datawrapper.dwcdn.net/7ZSqf/5/"
+/>
+
+<a name="staff-retention"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/g8Dwl/1/" />
 
-<DataWrapChart title="table" src="https://datawrapper.dwcdn.net/aFbdr/5/" />
+### 1.5
+
+<DataWrapChart
+  title="Clerical and Paralegal Capacity"
+  src="https://datawrapper.dwcdn.net/aFbdr/5/"
+/>
+
+<a name="clerical-capacity"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/ROHW2/1/" />
 
-<DataWrapChart title="table" src="https://datawrapper.dwcdn.net/1CDZQ/7/" />
+### 1.6
+
+<DataWrapChart
+  title="Data and Analytic Capacity"
+  src="https://datawrapper.dwcdn.net/1CDZQ/7/"
+/>
+
+<a name="data-analytic-capacity"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/Swmrz/2/" />
 
 </Section>

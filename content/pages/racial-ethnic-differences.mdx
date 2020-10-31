@@ -6,40 +6,150 @@ excerpt: This is your home page.
 import DataWrapChart from "../components/DataWrap";
 import ButtonToggle from "../components/ButtonToggle";
 
+<Section py="2|4|8|10">
+  <Container>
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+          Racial & Ethnic Differences
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          <strong>Objective 7: </strong> To reduce racial and ethnic disparities
+          in the criminal system, whether they stem from victim or defendant
+          identity.
+        </P>
+      </Flexbox>
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#victim-race-eth">
+              {" "}
+              Victimization of Racial/Ethnic Minorities
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#case-filing-diff">
+              {" "}
+              Case Filing Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#pretrial-detention-diff">
+              {" "}
+              Pretrial Detention Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#diversion-diff">
+              {" "}
+              Diversion Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+          <li>
+            <a href="#charging-plea-diff">
+              {" "}
+              Charging and Plea Offer Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#incarceration-diff">
+              Incarceration Differences by Defendant Race/Ethnicity
+            </a>
+          </li>
+        </ul>
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
 <Container>
 
 
 <Section maxWidth="750px">
 
 
-# Racial & Ethnic Differences
+### 7.1
 
-**Objective 7:** To reduce racial and ethnic disparities in the criminal system, whether they stem from victim or defendant identity.
+<DataWrapChart
+  title="Victimization of Racial/Ethnic Minorities"
+  src="https://datawrapper.dwcdn.net/WwvrV/4/"
+/>
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/WwvrV/4/" />
+<a name="victim-race-eth"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/M2JZh/1/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/meT0e/5/" />
+### 7.3
+
+<DataWrapChart
+  title="Case Filing Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/meT0e/5/"
+/>
+
+<a name="case-filing-diff"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/AcpkN/3/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/DlSps/3/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/yBwV9/5/" />
+### 7.4
+
+<DataWrapChart
+  title="Pretrial Detention Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/yBwV9/5/"
+/>
+
+<a name="pretrial-detention-diff"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/4jumi/2/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/o4OvY/2/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/wxS4v/5/" />
+### 7.5
+
+<DataWrapChart
+  title="Diversion Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/wxS4v/5/"
+/>
+
+<a name="diversion-diff"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/HTBZB/3/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/2HGA9/3/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/A6rvd/3/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/jZ04P/4/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/JjQDU/5/" />
+### 7.6
+
+<DataWrapChart
+  title="Charging and Plea Offer Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/JjQDU/5/"
+/>
+
+<a name="charging-plea-diff"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/MScq4/3/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/85Mva/2/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/pShcL/2/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/NOSG5/2/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/miTI7/5/" />
+#### 7.7
+
+<DataWrapChart
+  title="Incarceration Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/miTI7/5/"
+/>
+
+<a name="incarceration-diff"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/CReAm/2/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/jcFN2/4/" />
 <DataWrapChart src="https://datawrapper.dwcdn.net/t1ait/3/" />

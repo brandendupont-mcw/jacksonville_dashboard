@@ -5,32 +5,81 @@ excerpt: This is your home page.
 
 import DataWrapChart from "../components/DataWrap";
 
+<Section py="2|4|8|10">
+  <Container>
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+          Prosecutorial Ethics & Integrity
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          <strong>Objective 9: </strong> To avoid prosecutorial errors and
+          violations, promote law enforcement accountability, and ensure
+          conviction integrity.
+        </P>
+      </Flexbox>
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#dedication-conviction">
+              {" "}
+              Dedication to Conviction Integrity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#le-accountability">
+              {" "}
+              Commitment to Law Enforcement Accountability
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#charging-integrity"> Charging Integrity</a>{" "}
+          </li>
+        </ul>
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
 <Container>
 
 
-<Section maxWidth="700px">
+<Section maxWidth="750px">
 
-
-# Prosecutorial Ethics & Integrity
-
-**Objective 9:** To avoid prosecutorial errors and violations, promote law enforcement accountability, and ensure conviction integrity.
 
 <DataWrapChart
   title="Dedication to Conviction Integrity"
   src="https://datawrapper.dwcdn.net/Z4W9P/4/"
 />
+
+<a name="dedication-conviction"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/H317M/1/" />
 
 <DataWrapChart
   title="Commitment to Law Enforcement Accountability"
   src="https://datawrapper.dwcdn.net/UKlWY/5/"
 />
+
+<a name="le-accountability"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/He2dt/1/" />
 
 <DataWrapChart
-  title="Chargin Integrity"
+  title="Charging Integrity"
   src="https://datawrapper.dwcdn.net/nAUVp/4/"
 />
+
+<a name="charging-integrity"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/qLOn2/1/" />
 
 </Section>

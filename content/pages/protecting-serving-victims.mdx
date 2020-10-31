@@ -6,32 +6,104 @@ excerpt: This is your home page.
 import DataWrapChart from "../components/DataWrap";
 import ButtonToggle from "../components/ButtonToggle";
 
+<Section py="2|4|8|10">
+  <Container>
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+          Protecting & Serving Victims
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          <strong>Objective 5: </strong> To support crime victims with timely
+          outreach, to ensure their voices are heard, and to prevent future
+          victimization..
+        </P>
+      </Flexbox>
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#avoid-coercion"> Avoiding Victim Coercion</a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#victim-children">
+              {" "}
+              Addressing Violent Victimization of Children
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#victim-poor">
+              {" "}
+              Addressing Victimization of the Poor
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#victim-sex-assault">
+              Addressing Sexual Assault Victimization
+            </a>{" "}
+          </li>
+        </ul>
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
 <Container>
 
 
-<Section maxWidth="700px">
+<Section maxWidth="750px">
 
 
-# Protecting & Serving Victims
-
-**Objective 5:** To support crime victims with timely outreach, to ensure their voices are heard, and to prevent future victimization.
+### 5.3
 
 <DataWrapChart
   title="Avoiding Victim Coercion"
   src="https://datawrapper.dwcdn.net/ovIn0/4/"
 />
+
+<a name="avoid-coercion"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/uktbO/1/" />
+
+### 5.4
 
 <DataWrapChart
   title="Addressing Violent Victimization of Children"
   src="https://datawrapper.dwcdn.net/wgzE5/4/"
 />
+
+<a name="victim-children"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/qP12o/1/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/jSpPY/4/" />
+### 5.5
+
+<DataWrapChart
+  title="Addressing Victimization of the Poor"
+  src="https://datawrapper.dwcdn.net/jSpPY/4/"
+/>
+
+<a name="victim-poor"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/tsyFD/2/" />
 
-<DataWrapChart src="https://datawrapper.dwcdn.net/ePFu5/4/" />
+### 5.6
+
+<DataWrapChart
+  title="Addressing Sexual Assault Victimization"
+  src="https://datawrapper.dwcdn.net/ePFu5/4/"
+/>
+
+<a name="victim-sex-assault"> </a>
+
 <DataWrapChart src="https://datawrapper.dwcdn.net/ri94j/2/" />
 </Section>
 
