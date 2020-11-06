@@ -3,10 +3,126 @@ title: Home
 excerpt: This is your home page.
 ---
 
+import DataWrapChart from "../components/DataWrap";
+import ButtonToggle from "../components/ButtonToggle";
+
+<Section py="2|4|8|10">
+  <Container>
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+          Minimizing Unnecessary Punitiveness
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          <strong>Objective 8: </strong> To decrease unnecessary pretrial
+          detention, excessive charges, and unwarranted incarceration without
+          compromising public safety.
+        </P>
+      </Flexbox>
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#avoiding-unnecessary-felony">
+              {" "}
+              Avoiding Unnecessary Felony Charges at Filing
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#diversion-as-an-alternative">
+              {" "}
+              Diversion as an Alternative to Incarceration
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#reliance-on-pretrial-detention">
+              {" "}
+              Reducing Reliance on Pretrial Detention
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#disproportionate-punishment">
+              {" "}
+              Disproportionate Punishment for the Poor
+            </a>{" "}
+          </li>
+        </ul>
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
 <Container>
 
 
-# Minimizing Unnecessary Punitiveness
+<Section maxWidth="750px">
+
+
+### 8.1
+
+<DataWrapChart
+  title="Avoiding Unnecessary Felony Charges at Filing"
+  src="https://datawrapper.dwcdn.net/CpeZ0/4/"
+/>
+
+<a name="avoiding-unnecessary-felony"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/zb1fw/1/" />
+
+### 8.2
+
+<DataWrapChart
+  title="Diversion as an Alternative to Incarceration"
+  src="https://datawrapper.dwcdn.net/owwnA/4/"
+/>
+
+<a name="diversion-as-an-alternative"> </a>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/2Y65R/1/",
+    right: "https://datawrapper.dwcdn.net/rYXoJ/1/",
+  }}
+/>
+
+### 8.3
+
+<DataWrapChart
+  title="Reducing Reliance on Pretrial Detention"
+  src="https://datawrapper.dwcdn.net/ANXn6/4/"
+/>
+<a name="reliance-on-pretrial-detention"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/gqj20/2/" />
+
+### 8.7
+
+<DataWrapChart
+  title="Disproportionate Punishment for the Poor"
+  src="https://datawrapper.dwcdn.net/7nLTa/7/"
+/>
+
+<a name="disproportionate-punishment"> </a>
+
+<ButtonToggle
+  buttonText={["Defense", "Zip"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/UeNvQ/1/",
+    right: "https://datawrapper.dwcdn.net/NamO0/2/",
+  }}
+/>
+
+</Section>
+
 
 </Container>
 

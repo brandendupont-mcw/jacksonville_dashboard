@@ -3,10 +3,129 @@ title: Home
 excerpt: This is your home page.
 ---
 
+import DataWrapChart from "../components/DataWrap";
+import ButtonToggle from "../components/ButtonToggle";
+
+<Section py="2|4|8|10">
+<Container>
+  <Grid col="1|2" gap="4|8|12" alignItems="center">
+    <Flexbox
+      flexDirection="column"
+      alignItems="center|flex-start"
+      textAlign="center|left"
+    >
+      <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+        Timeliness of Case Processing
+      </H2>
+      <P fontSize="xl|2xl" mt="2">
+        <strong>Objective 3: </strong>To prevent case processing delays that cause hardship for defendants and victims, additional expenditure, and unnecessary backlogs in the court system.
+      </P>
+    </Flexbox>
+    <P>
+      <H4 m="0">Available Indicators </H4>{" "}
+      <ul>
+        <li>
+          {" "}
+          <a href="#time-to-felony-dispo">
+            {" "}
+            Time to Felony Disposition
+          </a>{" "}
+        </li>
+        <li>
+          {" "}
+          <a href="#efficient-filing-decisions"> Efficient Filing Decisions for Cases with Pretrial Detainees</a>{" "}
+        </li>
+        <li>
+          {" "}
+          <a href="#aba-time-standards">
+           Conforming to American Bar Association Disposition Time Standards
+          </a>{" "}
+        </li>
+        <li>
+          {" "}
+          <a href="#dismissal-timeliness">
+            Dismissal Timeliness
+          </a>{" "}
+        </li>
+      </ul>
+    </P>
+  </Grid>
+</Container>
+
+
+</Section>
+
+
 <Container>
 
 
-# Timeliness of Case Processing
+<Section maxWidth="750px">
+
+
+### 3.1
+
+<DataWrapChart
+  title="Time to Felony Disposition"
+  src="https://datawrapper.dwcdn.net/DnuHi/7/"
+/>
+
+<a name="time-to-felony-dispo"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/D2yd3/2/" />
+
+### 3.2
+
+<DataWrapChart
+  title="Efficient Filing Decisions for Cases with Pretrial Detainees"
+  src="https://datawrapper.dwcdn.net/F2TPN/6/"
+/>
+
+<a name="efficient-filing-decisions"> </a>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/EfU2H/1/",
+    right: "https://datawrapper.dwcdn.net/IKlAN/1/",
+  }}
+/>
+
+### 3.4
+
+<DataWrapChart
+  title="Conforming to ABA Disposition Time Standards"
+  src="https://datawrapper.dwcdn.net/qkT29/1/"
+/>
+
+<a name="aba-time-standards"> </a>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/hXKbk/4/",
+    right: "https://datawrapper.dwcdn.net/3pDwu/3/",
+  }}
+/>
+
+### 3.6
+
+<DataWrapChart
+  title="Dismissal Timeliness"
+  src="https://datawrapper.dwcdn.net/nGLvf/5/"
+/>
+
+<a name="dismissal-timeliness"> </a>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/61on5/2/",
+    right: "https://datawrapper.dwcdn.net/RugXq/1/",
+  }}
+/>
+
+</Section>
+
 
 </Container>
 
