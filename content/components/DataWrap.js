@@ -8,7 +8,9 @@ export default function DataWrapChart({ title, src, ...props }) {
 
   const randomNum = Math.floor(Math.random() * 1000);
 
-  const randomId = id + randomNum.toString();
+  const randomId = id + randomNum.toString() + Date.now();
+
+  const srcNew = src;
 
   const onMessage = useCallback(
     ({ data = {} }) => {
@@ -34,9 +36,9 @@ export default function DataWrapChart({ title, src, ...props }) {
       width="99%"
       {...props}
       title={title}
-      src={src}
+      src={srcNew}
       height={height}
-      key={randomId}
+      name={randomId}
     />
   );
 }
