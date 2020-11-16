@@ -1776,6 +1776,14 @@
     "@emotion/is-prop-valid" "^0.8.8"
     "@theme-ui/core" "^0.3.1"
 
+"@reflexjs/components@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@reflexjs/components/-/components-0.4.0.tgz#2b4775324b71ef50be96f7704592125d8faf9393"
+  integrity sha512-qijhBAkEygAZAl7U7tH7wqBLSCOTV7R67eO37DymubvjIo2c+u10taf/cQkVvtdRQsNK1J6CqiRolLQyrdEkvg==
+  dependencies:
+    "@emotion/is-prop-valid" "^0.8.8"
+    "@theme-ui/core" "^0.3.1"
+
 "@reflexjs/gatsby-helpers@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@reflexjs/gatsby-helpers/-/gatsby-helpers-0.6.0.tgz#62a9efe9ee98d9049837a91802be34c051efa63a"
@@ -1789,6 +1797,19 @@
   integrity sha512-MVjcyJovERIx/5dnXl+jpRxkkSvir0rX9QVKfNYjUZjwU6VoIu1rTxm4d8FMYTb1fH7l2sP2FDVEPmNrel4vKQ==
   dependencies:
     "@reflexjs/components" "^0.3.2"
+    "@reflexjs/gatsby-helpers" "^0.6.0"
+    "@reflexjs/utils" "^0.2.1"
+    gatsby-image "^2.4.5"
+    gatsby-plugin-sharp "^2.6.16"
+    gatsby-source-filesystem "^2.3.8"
+    gatsby-transformer-sharp "^2.5.9"
+
+"@reflexjs/gatsby-plugin-image@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@reflexjs/gatsby-plugin-image/-/gatsby-plugin-image-0.4.0.tgz#4f479aa5321f9324795a5b40b556b3f189a43d2d"
+  integrity sha512-9rZnaMgjdBYlcCvBT0ARMqnBswA8G6I2+Zvh0/uCCfHlXojh7ohpY+E1TAeU0LLEU+FtBeCbMft83PPOHhUOPg==
+  dependencies:
+    "@reflexjs/components" "^0.4.0"
     "@reflexjs/gatsby-helpers" "^0.6.0"
     "@reflexjs/utils" "^0.2.1"
     gatsby-image "^2.4.5"
@@ -1831,6 +1852,17 @@
     "@reflexjs/utils" "^0.2.1"
     gatsby-source-filesystem "^2.3.8"
 
+"@reflexjs/gatsby-theme-block@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@reflexjs/gatsby-theme-block/-/gatsby-theme-block-0.4.0.tgz#79ad51c54ddda8bc111dbdb44be38b5cb3e2830c"
+  integrity sha512-anf297jG41/nPPbsibZDcPhXNzyAIiYeOUYf3z0hxlKIGx0xU/MkluhyFj4bIInUNu94JPsprrx/UQNo3dDXpA==
+  dependencies:
+    "@reflexjs/components" "^0.4.0"
+    "@reflexjs/gatsby-helpers" "^0.6.0"
+    "@reflexjs/gatsby-theme-core" "^0.6.0"
+    "@reflexjs/utils" "^0.2.1"
+    gatsby-source-filesystem "^2.3.8"
+
 "@reflexjs/gatsby-theme-core@^0.5.4":
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/@reflexjs/gatsby-theme-core/-/gatsby-theme-core-0.5.4.tgz#b59e4f9f3962d4cd20128ba961b300ee957e46e0"
@@ -1840,6 +1872,31 @@
     "@mdx-js/mdx" "^1.6.4"
     "@mdx-js/react" "^1.6.5"
     "@reflexjs/components" "^0.3.2"
+    "@reflexjs/gatsby-helpers" "^0.6.0"
+    "@reflexjs/utils" "^0.2.1"
+    "@theme-ui/match-media" "^0.3.1"
+    "@theme-ui/prism" "^0.4.0-rc.1"
+    copy-to-clipboard "^3.3.1"
+    gatsby-image "^2.4.5"
+    gatsby-plugin-catch-links "^2.3.2"
+    gatsby-plugin-mdx "^1.2.15"
+    gatsby-plugin-sharp "^2.6.9"
+    gatsby-plugin-theme-ui "^0.3.0"
+    gatsby-source-filesystem "^2.3.8"
+    gatsby-transformer-remark "^2.8.13"
+    gatsby-transformer-sharp "^2.5.3"
+    github-slugger "^1.3.0"
+    theme-ui "^0.3.1"
+
+"@reflexjs/gatsby-theme-core@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@reflexjs/gatsby-theme-core/-/gatsby-theme-core-0.6.0.tgz#957b6a573fcbefee5080f1fb141f962082033569"
+  integrity sha512-341SiU+AV9NI8Y0Rhily60pd7MX8MYAkdgIRoiPrX8wa5lodIJBNcgSDCHwNHs5ZOHlgi0LtYhw/GJLCU9/ahg==
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@mdx-js/mdx" "^1.6.4"
+    "@mdx-js/react" "^1.6.5"
+    "@reflexjs/components" "^0.4.0"
     "@reflexjs/gatsby-helpers" "^0.6.0"
     "@reflexjs/utils" "^0.2.1"
     "@theme-ui/match-media" "^0.3.1"
@@ -1893,6 +1950,20 @@
     "@reflexjs/gatsby-theme-core" "^0.5.4"
     "@reflexjs/utils" "^0.2.1"
     gatsby-image "^2.4.5"
+    gatsby-source-filesystem "^2.3.8"
+
+"@reflexjs/gatsby-theme-video@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@reflexjs/gatsby-theme-video/-/gatsby-theme-video-0.5.0.tgz#45bb6485c158389f6a9fa324022bcbc683e8a813"
+  integrity sha512-PBqwxnB1S0se68hu9YhSCccWuoVeu8WtVJvU0gWlUs+69au8lrgf/722RMKK39Cy99RKbd4a9Q/zVY5JRBpoSQ==
+  dependencies:
+    "@reflexjs/components" "^0.4.0"
+    "@reflexjs/gatsby-helpers" "^0.6.0"
+    "@reflexjs/gatsby-plugin-image" "^0.4.0"
+    "@reflexjs/gatsby-theme-block" "^0.4.0"
+    "@reflexjs/gatsby-theme-core" "^0.6.0"
+    "@reflexjs/utils" "^0.2.1"
+    gatsby-awesome-pagination "^0.3.6"
     gatsby-source-filesystem "^2.3.8"
 
 "@reflexjs/icons-feather@^0.2.0":
@@ -15739,6 +15810,11 @@ yargs@^15.3.1, yargs@^15.4.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
+
+yarn@^1.22.10:
+  version "1.22.10"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.10.tgz#c99daa06257c80f8fa2c3f1490724e394c26b18c"
+  integrity sha512-IanQGI9RRPAN87VGTF7zs2uxkSyQSrSPsju0COgbsKQOOXr5LtcVPeyXWgwVa0ywG3d8dg6kSYKGBuYK021qeA==
 
 yauzl@^2.4.2:
   version "2.10.0"

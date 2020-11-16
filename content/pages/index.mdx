@@ -3,6 +3,8 @@ title: Home
 excerpt: This is your home page.
 ---
 
+import DataWrapChart from "../components/DataWrap";
+
 <Section pt="8|12|16|24">
   <Container>
     <Flexbox
@@ -41,14 +43,7 @@ excerpt: This is your home page.
 
 <Section py="8|12|16|24">
   <Container>
-    <Grid col="1|2" gap="8|12|16" alignItems="center">
-      <Image
-        src="jacksonville_site_image.jpg"
-        colStart="null|2"
-        w="full"
-        rounded="lg"
-        overflow="hidden"
-      />
+    <Grid col="1|2" gap="4|8|12" alignItems="center">
       <Flexbox
         flexDirection="column"
         alignItems="center|flex-start"
@@ -63,6 +58,18 @@ excerpt: This is your home page.
           data points to assess the work and impact of our office."
         </P>
       </Flexbox>
+      <Embed
+        src="https://www.youtube.com/embed/3PJjCWagi-M"
+        col="1|2"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        title="video"
+        w="full"
+        h="full"
+        minHeight="300"
+        rounded="lg"
+        fullscreen="allow"
+      />
     </Grid>
   </Container>
 </Section>

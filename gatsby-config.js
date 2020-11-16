@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     "@reflexjs/gatsby-theme-base",
     "@reflexjs/gatsby-theme-post",
+    "@reflexjs/gatsby-theme-video",
     {
       resolve: "@reflexjs/gatsby-plugin-metatags",
       options: {

@@ -17,6 +17,12 @@ export default function ButtonToggle({ buttonText, srcs }) {
   //set up right button state
   const [rbColor, setRBColor] = useState(tabColor[1]);
 
+  const id = selectedSrc.split("/").filter((str, i) => str.length === 5 && !!i);
+
+  const randomNum = Math.floor(Math.random() * 1000);
+
+  const randomId = id + randomNum.toString() + Date.now();
+
   function handleLBClick() {
     setSrc(srcs["left"]);
     setLBColor(tabColor[0]);
@@ -95,10 +101,10 @@ export default function ButtonToggle({ buttonText, srcs }) {
         <DataWrapChart
           frameborder="0"
           aria-label="Table"
-          id="datawrapper-chart-Fucs6"
           height="500"
           allowfullscreen="true"
           src={selectedSrc}
+          name={randomId}
         />
       </div>
     </div>
