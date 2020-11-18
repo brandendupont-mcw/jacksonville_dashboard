@@ -1,9 +1,9 @@
-import base from "@reflexjs/preset-base"
+import base from "@reflexjs/preset-base";
 
 export default {
   preset: base,
 
   colors: {
-    primary: `#005ae0`,
+    primary: `#0066ff`,
   },
-}
+};
