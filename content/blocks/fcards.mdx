@@ -7,30 +7,54 @@ export const FCards = ({ ...props }) => (
         </H2>
       </Div>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
-        <Embed
-          id="Assault"
-          sx={{
-            height: "300px",
-            width: "300px",
-          }}
-          src="https://datawrapper.dwcdn.net/Fh0Y4/5/"
-        />
-        <Embed
-          id="Assault"
-          sx={{
-            height: "300px",
-            width: "300px",
-          }}
-          src="https://datawrapper.dwcdn.net/UqJz1/4/"
-        />
-        <Embed
-          id="Assault"
-          sx={{
-            height: "300px",
-            width: "300px",
-          }}
-          src="https://datawrapper.dwcdn.net/gt3kD/3/"
-        />
+        <Box>
+          <Embed
+            id="Assault"
+            sx={{
+              height: "300px",
+              width: "300px",
+            }}
+            src="https://datawrapper.dwcdn.net/2yLGq/"
+          />
+          <Button as="a" href="/blog/2020-01-04-new-blog" variant="link">
+            Read more <Icon name="arrow-right" ml="4" />
+          </Button>
+        </Box>
+        <Box>
+          <Embed
+            id="Assault"
+            title="Gun Crimes"
+            sx={{
+              height: "300px",
+              width: "300px",
+            }}
+            src="https://datawrapper.dwcdn.net/5oN32/"
+          />
+          <Button
+            as="a"
+            href="blog/2020-02-18-officiis-unde-dignissimos-molestias-ipsam-alias/"
+            variant="link"
+          >
+            Read more <Icon name="arrow-right" ml="4" />
+          </Button>
+        </Box>
+        <Box>
+          <Embed
+            id="Race and Incarceration"
+            sx={{
+              height: "300px",
+              width: "300px",
+            }}
+            src="https://datawrapper.dwcdn.net/7jAdR/"
+          />
+          <Button
+            as="a"
+            href="/blog/2020-01-03-doloribus-corporis-repudiandae-at-dolorem-hic-laborum/"
+            variant="link"
+          >
+            Read more <Icon name="arrow-right" ml="4" />
+          </Button>
+        </Box>
       </Grid>
     </Container>
   </Section>

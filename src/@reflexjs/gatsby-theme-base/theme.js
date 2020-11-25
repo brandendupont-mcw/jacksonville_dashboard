@@ -4,6 +4,6 @@ export default {
   preset: base,
 
   colors: {
-    primary: `#0066ff`,
+    primary: `#005daa`,
   },
 };
