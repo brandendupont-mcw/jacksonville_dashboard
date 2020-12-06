@@ -3,36 +3,43 @@ export const FCards = ({ ...props }) => (
     <Container>
       <Div textAlign="center|left" flex="1">
         <H2 fontSize="4l|5l" m="0" textDecoration="underline">
-          Featured Indicators and Data Stories
+          Data Stories
         </H2>
       </Div>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
         <Box>
-          <Embed
+          <iframe
             id="Assault"
-            sx={{
-              height: "300px",
-              width: "300px",
-              scrolling: "no",
-            }}
-            src="https://datawrapper.dwcdn.net/2yLGq/"
             scrolling="no"
+            frameborder="0"
+            style="border: none;"
+            width="300px"
+            height="300px"
+            src="https://datawrapper.dwcdn.net/2yLGq/"
           />
           <Button as="a" href="/blog/2020-01-04-new-blog" variant="link">
             Read more <Icon name="arrow-right" ml="4" />
           </Button>
         </Box>
-        <Box>
-          <Embed
+        <Box
+          id="Assault"
+          title="Gun Crimes"
+          sx={{
+            height: "300px",
+            width: "300px",
+            scrolling: "no",
+          }}
+        >
+          <iframe
             id="Assault"
             title="Gun Crimes"
-            sx={{
-              height: "300px",
-              width: "300px",
-              scrolling: "no",
-            }}
-            src="https://datawrapper.dwcdn.net/5oN32/"
+            src="https://datawrapper.dwcdn.net/DKFyQ/1/"
             scrolling="no"
+            frameborder="0"
+            style="border: none;"
+            width="300px"
+            height="300px"
+            style="overflow:hidden"
           />
           <Button
             as="a"
@@ -43,7 +50,7 @@ export const FCards = ({ ...props }) => (
           </Button>
         </Box>
         <Box>
-          <Embed
+          <iframe
             id="Race and Incarceration"
             sx={{
               height: "300px",
@@ -52,6 +59,10 @@ export const FCards = ({ ...props }) => (
             }}
             src="https://datawrapper.dwcdn.net/7jAdR/"
             scrolling="no"
+            frameborder="0"
+            style="border: none;"
+            width="300px"
+            height="300px"
           />
           <Button
             as="a"
