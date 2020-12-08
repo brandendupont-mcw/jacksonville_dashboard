@@ -9,7 +9,7 @@ import DataWrapChart from "../components/DataWrap";
   py="8|12|16|24"
   sx={{
     backgroundImage:"url(https://raw.githubusercontent.com/brandendupont-mcw/jacksonville_dashboard/master/static/jax-bridge.jpg)",
-    backgroundSize: "110% 100%;",
+    backgroundSize: "100% 100%;",
     backgroundRepeat: "no-repeat",
     borderRadius: 10,
   }}
@@ -45,40 +45,45 @@ import DataWrapChart from "../components/DataWrap";
 
 
   </Container>
-</Section>
 
 
-<Section pt="8|12|16|24">
-  <Container>
-    <Flexbox
-      flexDirection="column"
-      alignItems="center|flex-start"
-      textAlign="center|left"
-    >
-      <H1 m="0" fontWeight="bold" lineHeight="tight" >
-        State Attorney's Office
-      </H1>
-      <H1 m="0" fontWeight="bold" lineHeight="tight">
-        Florida's Fourth Judicial Circuit
-      </H1>
-            <H1 m="0" fontWeight="bold" lineHeight="tight" color="#005daa">
-        Data Dashboard
-      </H1>
-      <P fontSize="xl|2xl" mt="2" >
-        Our office is committed to transparency and accountability. We will regularly release data on key decision-points and indicators of our performance. This effort is part of the <a href="https://prosecutorialperformanceindicators.org/">Prosecutorial Performance Indicators</a>, a network of prosecutors and researchers working toward data-driven reforms. 
-      </P>
-      
-    </Flexbox>
-    <br></br>
-
-
-  </Container>
 </Section>
 
 
 <Section py="8|12|16|24">
   <Container>
-    <Grid col="1|2" gap="4|8|12" alignItems="center">
+    <Grid col="1|2" gap="4|6|10" alignItems="left">
+      <Flexbox
+        flexDirection="column"
+        alignItems="center|flex-start"
+        textAlign="center|left"
+      >
+        <H2 m="0" fontWeight="bold" lineHeight="tight">
+          State Attorney's Office
+        </H2>
+        <H2 m="0" fontWeight="bold" lineHeight="tight">
+          Florida's Fourth Judicial Circuit
+        </H2>
+        <H2 m="0" fontWeight="bold" lineHeight="tight" color="#005daa">
+          Data Dashboard
+        </H2>
+      </Flexbox>
+      <P fontSize="xl|2xl" mt="2">
+        Our office is committed to transparency and accountability. We will
+        regularly release data on key decision-points and indicators of our
+        performance. This effort is part of the{" "}
+        <a href="https://prosecutorialperformanceindicators.org/">
+          Prosecutorial Performance Indicators
+        </a>
+        , a network of prosecutors and researchers working toward data-driven reforms.
+      </P>
+    </Grid>
+  </Container>
+</Section>
+
+<Section py="8|12|16|24">
+  <Container>
+    <Grid col="1|2" gap="8|10|14" alignItems="center">
       <Flexbox
         flexDirection="column"
         alignItems="center|flex-start"
