@@ -5,6 +5,50 @@ excerpt: This is your home page.
 
 import DataWrapChart from "../components/DataWrap";
 
+<Section
+  py="8|12|16|24"
+  sx={{
+    backgroundImage:"url(https://capitolshots.com/wp-content/uploads/galleries/post-2997/full/Duval-County-Courthouse-02004W.jpg)",
+    backgroundSize: "100% 200%;",
+    backgroundRepeat: "no-repeat",
+    borderRadius: 10,
+  }}
+>
+  <Container>
+
+
+<Flexbox
+  flexDirection="column"
+  textAlign="left"
+  maxWidth="400px"
+  borderWidth="1px"
+  rounded="lg"
+  p="4|6|8"
+  position="relative"
+  backgroundColor="white"
+  hoverBorderColor="primary"
+  {...props}
+>
+
+
+  <H1 fontSize="36" fontWeight="bold" mt="1|2" mb="0">
+    Opening Florida's Fourth Judicial Circuit Data to the Public.
+  </H1>
+            <Grid col="2" gap="4" marginTop="4">
+        <Button as="a" href="/#indicator_section" variant="primary" hoverBg="#3473c3">
+          View Indicators
+        </Button>
+        <Button as="a" href="/blog" variant="secondary" hoverBg="#494949">
+          Data Stories <Icon name="arrow-right" ml="4" />
+        </Button>
+      </Grid>
+</Flexbox>
+
+
+  </Container>
+</Section>
+
+
 <Section pt="8|12|16|24">
   <Container>
     <Flexbox
