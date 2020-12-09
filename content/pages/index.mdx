@@ -30,8 +30,11 @@ import DataWrapChart from "../components/DataWrap";
 >
 
 
-  <H1 fontSize="36" fontWeight="bold" mt="1|2" mb="0">
-    Opening Florida's Fourth Judicial Circuit Data to the Public.
+  <H1 fontSize="32" fontWeight="bold" mt="1|2" mb="0">
+    State Attorney's Office Florida's Fourth Judicial Circuit
+        <H1 m="0" fontSize="34" fontWeight="bold" lineHeight="tight" color="#005daa">
+    Data Dashboard
+  </H1>
   </H1>
             <Grid col="2" gap="4" marginTop="4">
         <Button as="a" href="/#indicator_section" variant="primary" hoverBg="#3473c3">
@@ -50,34 +53,21 @@ import DataWrapChart from "../components/DataWrap";
 </Section>
 
 
-<Section py="8|12|16|24">
+<Section py="4|6|8|6">
   <Container>
-    <Grid col="1|2" gap="4|6|10" alignItems="left">
-      <Flexbox
-        flexDirection="column"
-        alignItems="center|flex-start"
-        textAlign="center|left"
-      >
-        <H2 m="0" fontWeight="bold" lineHeight="tight">
-          State Attorney's Office
-        </H2>
-        <H2 m="0" fontWeight="bold" lineHeight="tight">
-          Florida's Fourth Judicial Circuit
-        </H2>
-        <H2 m="0" fontWeight="bold" lineHeight="tight" color="#005daa">
-          Data Dashboard
-        </H2>
-      </Flexbox>
-      <P fontSize="xl|2xl" mt="2">
-        Our office is committed to transparency and accountability. We will
-        regularly release data on key decision-points and indicators of our
-        performance. This effort is part of the{" "}
-        <a href="https://prosecutorialperformanceindicators.org/">
-          Prosecutorial Performance Indicators
-        </a>
-        , a network of prosecutors and researchers working toward data-driven reforms.
-      </P>
-    </Grid>
+    <Flexbox fontSize="xl|xl" gap="0" mt="1">
+      <Div px="40" textAlign="center">
+        <P>
+          {" "}
+          Our office is committed to transparency and accountability. We will regularly
+          release data on key decision-points and indicators of our performance.
+          This effort is part of the <a href="https://prosecutorialperformanceindicators.org/">
+            Prosecutorial Performance Indicators
+          </a>, a network of prosecutors and researchers working toward data-driven
+          reforms.
+        </P>
+      </Div>
+    </Flexbox>
   </Container>
 </Section>
 
