@@ -2,7 +2,7 @@ require(`dotenv`).config();
 
 module.exports = {
   siteMetadata: {
-    title: "SAO 4th",
+    title: "SAO4",
     description:
       "Our office is committed to transparency and accountability. Therefore, we annually release data on key decision-points and our performance.",
     siteUrl: process.env.SITE_URL || "https://localhost:8000",

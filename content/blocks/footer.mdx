@@ -10,9 +10,9 @@ export const FooterBlock = () => {
           alignItems={["flex-start", "center"]}
           justifyContent="space-between"
         >
-          <H2 m="0" fontSize="xl|2xl|3xl">
-            {title}
-          </H2>
+          <H3 m="0" fontSize="xl|2xl|3xl">
+            <a href=""> Feedback </a>
+          </H3>
           <NavMenu
             name="footer-example"
             dropdown={false}
@@ -24,9 +24,7 @@ export const FooterBlock = () => {
             flexDirection={["column", "row"]}
             alignItems={["flex-start", "center"]}
             justifyContent="space-between"
-          >
-            <Link href=""> Data Feedback</Link>
-          </Flexbox>
+          ></Flexbox>
           <Grid col="2" gap="4" mt={[4, 0]}>
             <A href="https://twitter.com/sao4florida" color="text">
               <Icon name="twitter" size={5} />
@@ -47,6 +45,11 @@ export const FooterBlock = () => {
           pt={[4, 5, 6]}
           mt={[4, 5, 6]}
         >
+          <P fontSize="lg" mt="0">
+            <em> Pursue Justice Always </em>
+          </P>
+        </Div>
+        <Div textAlign="center" pt={[4, 5, 6]} mt={[4, 5, 6]}>
           <P fontSize="sm" mt="0">
             © {new Date().getFullYear()} {title}
           </P>
