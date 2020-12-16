@@ -4,73 +4,79 @@ export const Cards = ({ ...props }) => (
       <H2 m="0" lineHeight="tight" textAlign="center">
         Prosecutorial Performance Indicators
       </H2>
-      <Grid col="1|2|3" mt="6|8|10" gap="2|4|6">
-        <H6 textAlign="center">Capacity & Efficiency </H6>
-        <H6 textAlign="center">Community Safety & Well-Being</H6>
-        <H6 textAlign="center">Fairness & Justice</H6>
-        <Card
-          url="/organizational-and-staff-capacity"
-          icon="grid"
-          heading="Organizational and Staff Capacity"
-          description=""
-          iconbg="#1b9e77"
-        />
-        <Card
-          url="/addressing-serious-crime"
-          icon="users"
-          heading="Addressing Serious Crime"
-          description=""
-          iconbg="#ca562c"
-        />
-        <Card
-          url="/racial-ethnic-differences"
-          icon="hexagon"
-          heading="Racial & Ethnic Differences"
-          description=""
-          iconbg="#4575b5"
-        />
-        <Card
-          url="/time-resource-prioritization"
-          icon="grid"
-          heading="Time & Resource Prioritization"
-          description=""
-          iconbg="#1b9e77"
-        />
-        <Card
-          url="/protecting-serving-victims"
-          icon="users"
-          heading="Protecting & Serving Victims"
-          description=""
-          iconbg="#ca562c"
-        />
-        <Card
-          url="/maximizing-prosecutorial-fairness"
-          icon="hexagon"
-          heading="Maximizing Prosecutorial Fairness"
-          description=""
-          iconbg="#4575b5"
-        />
-        <Card
-          url="/timeliness-of-case-processing"
-          icon="grid"
-          heading="Timeliness of Case Processing"
-          description=""
-          iconbg="#1b9e77"
-        />
-        <Card
-          url="/community-outreach-engagement"
-          icon="users"
-          heading="Community Outreach & Engagement"
-          description=""
-          iconbg="#ca562c"
-        />
-        <Card
-          url="/prosecutorial-ethics-integrity"
-          icon="hexagon"
-          heading="Prosecutorial Ethics & Integrity"
-          description=""
-          iconbg="#4575b5"
-        />
+      <Grid col="1|3" mt="" gap="2|4|6">
+        <Grid col="1|2|1" mt="6|8|10" gap="2|4|6">
+          <H6 textAlign="center">Capacity & Efficiency </H6>
+          <Card
+            url="/organizational-and-staff-capacity"
+            icon="grid"
+            heading="Organizational and Staff Capacity"
+            description=""
+            iconbg="#1b9e77"
+          />
+          <Card
+            url="/time-resource-prioritization"
+            icon="grid"
+            heading="Time & Resource Prioritization"
+            description=""
+            iconbg="#1b9e77"
+          />
+          <Card
+            url="/timeliness-of-case-processing"
+            icon="grid"
+            heading="Timeliness of Case Processing"
+            description=""
+            iconbg="#1b9e77"
+          />
+        </Grid>
+        <Grid col="1|2|1" mt="6|8|10" gap="2|4|6">
+          <H6 textAlign="center">Community Safety & Well-Being</H6>
+          <Card
+            url="/addressing-serious-crime"
+            icon="users"
+            heading="Addressing Serious Crime"
+            description=""
+            iconbg="#ca562c"
+          />
+          <Card
+            url="/protecting-serving-victims"
+            icon="users"
+            heading="Protecting & Serving Victims"
+            description=""
+            iconbg="#ca562c"
+          />
+          <Card
+            url="/community-outreach-engagement"
+            icon="users"
+            heading="Community Outreach & Engagement"
+            description=""
+            iconbg="#ca562c"
+          />
+        </Grid>
+        <Grid col="1|2|1" mt="6|8|10" gap="2|4|6">
+          <H6 textAlign="center">Fairness & Justice</H6>
+          <Card
+            url="/racial-ethnic-differences"
+            icon="hexagon"
+            heading="Racial & Ethnic Differences"
+            description=""
+            iconbg="#4575b5"
+          />
+          <Card
+            url="/maximizing-prosecutorial-fairness"
+            icon="hexagon"
+            heading="Maximizing Prosecutorial Fairness"
+            description=""
+            iconbg="#4575b5"
+          />
+          <Card
+            url="/prosecutorial-ethics-integrity"
+            icon="hexagon"
+            heading="Prosecutorial Ethics & Integrity"
+            description=""
+            iconbg="#4575b5"
+          />
+        </Grid>
         <a
           style="margin-top: 25px;"
           href="https://ppibuild.wpengine.com/wp-content/uploads/2020/09/PPI-Brochure-Inside-Sept-2020.pdf"
