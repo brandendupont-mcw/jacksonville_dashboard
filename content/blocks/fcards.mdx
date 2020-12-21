@@ -7,75 +7,27 @@ export const FCards = ({ ...props }) => (
         </H2>
       </Div>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
-        <Box>
-          <iframe
-            id="Assault"
-            scrolling="no"
-            frameborder="0"
-            style="border: none;"
-            width="300px"
-            height="300px"
-            src="https://datawrapper.dwcdn.net/2yLGq/"
-          />
-          <Button
-            as="a"
-            href="organizational-and-staff-capacity#prosecutor-diversity"
-            variant="link"
-          >
-            Learn more <Icon name="arrow-right" ml="4" />
-          </Button>
-        </Box>
-        <Box
-          id="Assault"
-          title="Gun Crimes"
-          sx={{
-            height: "300px",
-            width: "300px",
-            scrolling: "no",
-          }}
+        <Button
+          as="a"
+          href="organizational-and-staff-capacity"
+          backgroundColor="#199e77"
         >
-          <iframe
-            id="Assault"
-            title="Gun Crimes"
-            src="https://datawrapper.dwcdn.net/DKFyQ/3/"
-            scrolling="no"
-            frameborder="0"
-            style="border: none;"
-            width="300px"
-            height="300px"
-            style="overflow:hidden"
-          />
-          <Button
-            as="a"
-            href="addressing-serious-crime#violent-crime-prevention"
-            variant="link"
-          >
-            Learn more <Icon name="arrow-right" ml="4" />
-          </Button>
-        </Box>
-        <Box>
-          <iframe
-            id="Race and Incarceration"
-            sx={{
-              height: "300px",
-              width: "300px",
-              scrolling: "no",
-            }}
-            src="https://datawrapper.dwcdn.net/7jAdR/"
-            scrolling="no"
-            frameborder="0"
-            style="border: none;"
-            width="300px"
-            height="300px"
-          />
-          <Button
-            as="a"
-            href="racial-ethnic-differences#incarceration-diff"
-            variant="link"
-          >
-            Learn more <Icon name="arrow-right" ml="4" />
-          </Button>
-        </Box>
+          <H4 color="white"> Capacity & Efficiency </H4>
+        </Button>
+        <Button
+          as="a"
+          href="addressing-serious-crime"
+          backgroundColor="#b24a3b"
+        >
+          <H4 color="white"> Community Safety & Well-Being</H4>
+        </Button>
+        <Button
+          as="a"
+          href="racial-ethnic-differences"
+          backgroundColor="#003e73"
+        >
+          <H4 color="white"> Fairness & Justice</H4>
+        </Button>
       </Grid>
     </Container>
   </Section>
