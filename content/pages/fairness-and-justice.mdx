@@ -1,0 +1,223 @@
+---
+title: Home
+excerpt: This is your home page.
+---
+
+import DataWrapChart from "../components/DataWrap";
+import ButtonToggle from "../components/ButtonToggle";
+
+<Section py="2|4|8|10">
+  <Container>
+    <Flexbox
+      flexDirection="column"
+      alignItems="center|flex-start"
+      textAlign="center|left"
+    >
+      <H1 m="0" fontWeight="extrabold" lineHeight="tight">
+        Fairness & Justice
+      </H1>
+      <Section maxWidth="750px">
+        <P>
+          {" "}
+          Regardless of the cause, reducing racial and ethnic disparities in the criminal justice system promotes trust and transparency. Our objectives include eliminating racial, ethnic, and economic disparities; using effective diversion programs, and embracing problem-solving approaches that are not merely punitive—all while exemplifying the highest levels of professionalism.{" "}
+        </P>
+      </Section>
+    </Flexbox>
+    <Grid col="1|2" gap="1|1|1" alignItems="center">
+      <P>
+        <H4 m="0">Available Indicators </H4>{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="#victim-race-eth">
+              {" "}
+              Victimization of Racial/Ethnic Minorities
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#case-filing-diff">
+              {" "}
+              Case Filing Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#pretrial-detention-diff">
+              {" "}
+              Pretrial Detention Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+                            <li>
+            {" "}
+            <a href="#diversion-diff">
+              {" "}
+              Diversion Differences by Defendant Race/Ethnicity
+            </a>{" "}
+          </li>
+        </ul>
+      </P>
+      <P>
+        <ul>
+          <li>
+            {" "}
+            <a href="#incarceration-diff">
+              Incarceration Differences by Defendant Race/Ethnicity
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#diversion-as-an-alternative">
+              {" "}
+              Diversion as an Alternative to Incarceration
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#disproportionate-punishment">
+              {" "}
+              Disproportionate Punishment for the Poor
+            </a>{" "}
+          </li>
+                    <li>
+            {" "}
+            <a href="#dedication-conviction">
+              {" "}
+              Dedication to Conviction Integrity
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="#le-accountability">
+              {" "}
+              Commitment to Law Enforcement Accountability
+            </a>{" "}
+          </li>
+        </ul>{" "}
+      </P>
+    </Grid>
+
+
+  </Container>
+</Section>
+
+
+<Container>
+
+
+<Section maxWidth="750px">
+
+
+<DataWrapChart
+  title="Victimization of Racial/Ethnic Minorities"
+  src="https://datawrapper.dwcdn.net/QfFrl/2/"
+/>
+
+<a name="victim-race-eth"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/M2JZh/" />
+
+<DataWrapChart
+  title="Case Filing Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/QEziS/2/"
+/>
+
+<a name="case-filing-diff"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/AcpkN/3/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/DlSps/3/" />
+
+<DataWrapChart
+  title="Pretrial Detention Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/ukep8/4/"
+/>
+
+<a name="pretrial-detention-diff"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/4jumi/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/o4OvY/" />
+
+<DataWrapChart
+  title="Diversion Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/qUuLD/3/"
+>
+  {" "}
+</DataWrapChart>
+
+<a name="diversion-diff"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/HTBZB/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/2HGA9/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/A6rvd/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/jZ04P/" />
+
+<DataWrapChart
+  title="Incarceration Differences by Defendant Race/Ethnicity"
+  src="https://datawrapper.dwcdn.net/peRUt/1/"
+/>
+
+<a name="incarceration-diff"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/CReAm/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/jcFN2/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/t1ait/" />
+<DataWrapChart src="https://datawrapper.dwcdn.net/BKn1E/" />
+
+<!-- ### 8.2 -->
+
+<DataWrapChart
+  title="Diversion as an Alternative to Incarceration"
+  src="https://datawrapper.dwcdn.net/Jnk2k/1/"
+/>
+
+<a name="diversion-as-an-alternative"> </a>
+
+<ButtonToggle
+  buttonText={["Felony", "Misd"]}
+  srcs={{
+    left: "https://datawrapper.dwcdn.net/2Y65R/",
+    right: "https://datawrapper.dwcdn.net/rYXoJ/",
+  }}
+/>
+
+<!-- ### 8.7 -->
+
+<DataWrapChart
+  title="Disproportionate Punishment for the Poor"
+  src="https://datawrapper.dwcdn.net/y0Ri0/2/"
+/>
+
+<a name="disproportionate-punishment"> </a>
+
+<DataWrapChart
+  title="Diversion as an Alternative to Incarceration Chart"
+  src="https://datawrapper.dwcdn.net/NamO0/"
+/>
+
+<!-- ### 9.2 -->
+
+<DataWrapChart
+  title="Dedication to Conviction Integrity"
+  src="https://datawrapper.dwcdn.net/s0xf1/1/"
+/>
+
+<a name="dedication-conviction"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/H317M/" />
+
+<!-- ### 9.3 -->
+
+<DataWrapChart
+  title="Commitment to Law Enforcement Accountability"
+  src="https://datawrapper.dwcdn.net/ykky3/4/"
+/>
+
+<a name="le-accountability"> </a>
+
+<DataWrapChart src="https://datawrapper.dwcdn.net/He2dt/" />
+
+</Section>
+
+
+</Container>
+
